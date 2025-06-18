@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", Roboto, sans-serif;
+    background-color: #f7f2d4;
+    color: #333;
+}
+
+.banner {
+    width: 100%;
+    max-height: 240px;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.accueil-content {
+    padding: 40px 80px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #fff7d1;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    font-size: 4 rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 15px;
+}
+
+ul li::before {
+    content: "📖 ";
+    margin-right: 8px;
+}
+
+a.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 22px;
+    background-color: #6d5f29;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+a.btn:hover {
+    background-color: #4e441e;
+}
+
+
+.footer-banner {
+    margin-top: 40px;
+    text-align: center;
+}
+.footer-banner img {
+    width: 100%;
+    max-height: 80px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border-radius: 0;
+    box-shadow: none;
+}
+footer {
+    background-color:#5a531f; /* Couleur de fond blanche comme le reste */
+    color: #fff;          /* Même couleur que le menu */
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.95em;
+    font-weight: bold;
+}
+
+

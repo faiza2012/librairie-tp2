@@ -1,0 +1,17 @@
+{
+  "name": "faizadjahnine/librairie",
+  "authors": [
+    {
+      "name": "faiza djahnine",
+      "email": "faizadjahnine@yahoo.fr"
+    }
+  ],
+  "require": {
+    "twig/twig": "^3.21"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  }
+}

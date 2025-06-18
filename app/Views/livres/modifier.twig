@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Modifier un livre</title>
+    <link rel="stylesheet" href="form-style.css">
+
+</head>
+<body>
+
+    <!-- Bande image en haut -->
+    <div class="banner">
+        <img src="images/banner.jpg" alt="Bannière">
+    </div>
+
+    <!-- Menu de navigation -->
+    <div class="navbar">
+       
+    </div>
+
+    <!-- Contenu formulaire -->
+    <div class="form-container">
+        <h1>Modifier un livre</h1>
+
+        <form action="index.php?controller=livre&action=modifier&id={{ livre.id }}" method="post">
+            <label>Titre :</label>
+            <input type="text" name="titre" value="{{ livre.titre }}" required>
+
+            <label>Auteur :</label>
+            <input type="text" name="auteur" value="{{ livre.auteur }}" required>
+
+            <label>Prix :</label>
+            <input type="number" step="0.01" name="prix" value="{{ livre.prix }}" required>
+
+            <label>Catégorie ID :</label>
+            <input type="number" name="categorie_id" value="{{ livre.categorie_id }}" required>
+
+            <label>Éditeur ID :</label>
+            <input type="number" name="editeur_id" value="{{ livre.editeur_id }}" required>
+
+            <input type="submit" value="Enregistrer">
+        </form>
+
+        <div style="margin-top: 20px;">
+            <a href="index.php?controller=livre&action=index" class="btn">← Retour à la liste</a>
+
+        </div>
+    </div>
+
+    <!-- Image décorative avant footer -->
+    <div class="footer-banner">
+        <img src="images/bibliotheque.jpg" alt="Livres décoratifs">
+    </div>
+
+    <!-- Pied de page -->
+    <footer>
+        Projet Web TP2 – 2025
+    </footer>
+
+</body>
+</html>

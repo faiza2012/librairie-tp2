@@ -1,0 +1,190 @@
+/* ====== BASE ====== */
+body {
+    background-color: #fdf6e3;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ====== BANNIÈRE HAUT ====== */
+.banner {
+    width: 100%;
+    max-height: 240px;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* ====== NAVBAR ====== */
+.navbar {
+    background-color: #5a531f;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ====== TITRE CENTRAL DE PAGE ====== */
+.page-title {
+    text-align: center;
+    font-size: 2em;
+    color: #5a531f;
+    margin: 20px 0 10px;
+}
+
+/* ====== TABLEAU ====== */
+.table-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.08);
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f3f3f3;
+    color: #333;
+    font-weight: 600;
+}
+
+table a {
+    font-weight: 500;
+    text-decoration: none;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+/* ====== BOUTONS MODIFIER / SUPPRIMER ====== */
+.btn-action {
+    padding: 6px 12px;
+    font-size: 0.85em;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-modifier {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.btn-modifier:hover {
+    background-color: #45a049;
+}
+
+.btn-supprimer {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.btn-supprimer:hover {
+    background-color: #e53935;
+}
+
+/* ====== CONTENU PAGE D’ACCUEIL ====== */
+.accueil-content {
+    padding: 40px 80px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #fff7d1;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 15px;
+}
+
+ul li::before {
+    margin-right: 8px;
+}
+
+/* ====== BOUTON ACCUEIL ====== */
+a.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 22px;
+    background-color: #6d5f29;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+a.btn:hover {
+    background-color: #4e441e;
+}
+
+/* ====== IMAGE AU-DESSUS DU FOOTER ====== */
+.footer-banner {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.footer-banner img {
+    width: 100%;
+    max-height: 80px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* ====== PIED DE PAGE ====== */
+footer {
+    background-color: #5a531f;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.95em;
+    font-weight: bold;
+}

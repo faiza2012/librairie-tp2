@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Liste des livres</title>
+    
+    <link rel="stylesheet" href="style-livres.css">
+
+</head>
+<body>
+
+<div class="banner">
+    <img src="images/banner.jpg" alt="Bannière de la librairie">
+</div>
+
+<div class="navbar">
+    <h1>Librairie des costaux</h1>
+    <ul>
+        <li><a href="index.php?controller=page&action=accueil" class="btn">Accueil</a></li>
+        <li><a href="index.php?controller=livre&action=ajouter" class="btn add">Ajouter un livre</a></li>
+    </ul>
+</div>
+
+
+
+
+<h3>Liste des livres</h3>
+<div class="table-wrapper">
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Titre</th>
+            <th>Auteur</th>
+            <th>Prix</th>
+            <th>Catégorie</th>
+            <th>Éditeur</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for l in livres %}
+        <tr>
+            <td>{{ l.id }}</td>
+            <td>{{ l.titre }}</td>
+            <td>{{ l.auteur }}</td>
+            <td>{{ l.prix }} $</td>
+            <td>{{ l.categorie }}</td>
+            <td>{{ l.editeur }}</td>
+            <td>
+                <a href="index.php?controller=livre&action=modifier&id={{ l.id }}" class="btn-action btn-modifier">Modifier</a>
+                <a href="index.php?controller=livre&action=supprimer&id={{ l.id }}" class="btn-action btn-supprimer" onclick="return confirm('Supprimer ce livre ?')">Supprimer</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</div>
+<div class="footer-banner">
+    <img src="images/bibliotheque.jpg" alt="Bannière bibliothèque">
+</div>
+<footer>
+    Projet Web TP2 – 2025
+</footer>
+
+
+</body>
+</html>
+

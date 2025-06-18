@@ -1,0 +1,21 @@
+# Ignorer les fichiers/dossiers sensibles ou inutiles
+
+# Dépendances PHP
+/vendor/
+
+# Fichiers temporaires
+*.log
+*.tmp
+*.bak
+
+# Fichiers systèmes
+.DS_Store
+Thumbs.db
+
+# Configs spécifiques à l’environnement
+.env
+.idea/
+.vscode/
+
+# Cache Twig ou autres
+/cache/

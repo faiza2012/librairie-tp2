@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajouter un livre</title>
+    <link rel="stylesheet" href="form-style.css">
+</head>
+<body>
+
+
+    <div class="banner">
+        <img src="images/banner.jpg" alt="Bannière">
+    </div>
+
+    <div class="navbar">
+        <div class="title">Librairie des costaux</div>
+        <div class="nav-links">
+            <a href="index.php?controller=page&action=accueil">Accueil</a>
+            <a href="index.php?controller=livre&action=index">Liste des livres</a>
+        </div>
+    </div>
+
+    <!-- Conteneur principal pour le formulaire -->
+    <div class="form-container">
+        <h1>Ajouter un livre</h1>
+
+        {# Affichage des erreurs de validation s’il y en a #}
+        {% if errors %}
+            <ul style="color:red;">
+                {% for error in errors %}
+                    <li>{{ error }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+        <!-- Formulaire d'ajout de livre -->
+        <form action="index.php?controller=livre&action=ajouter" method="post">
+            <label>Titre :</label>
+            <input type="text" name="titre" value="{{ titre|default('') }}" required>
+
+            <label>Auteur :</label>
+            <input type="text" name="auteur" value="{{ auteur|default('') }}" required>
+
+            <label>Prix :</label>
+            <input type="number" step="0.01" name="prix" value="{{ prix|default('') }}" required>
+
+            <label>Catégorie ID :</label>
+            <input type="number" name="categorie_id" value="{{ categorie_id|default('') }}" required>
+
+            <label>Éditeur ID :</label>
+            <input type="number" name="editeur_id" value="{{ editeur_id|default('') }}" required>
+
+            <input type="submit" value="Ajouter">
+        </form>
+
+        
+        <div style="margin-top: 20px;">
+            <a href="index.php?controller=livre&action=index" class="btn">← Retour à la liste</a>
+        </div>
+    </div>
+
+  
+    <div class="footer-banner">
+        <img src="images/bibliotheque.jpg" alt="Livres décoratifs">
+    </div>
+
+  
+    <footer>
+        Projet Web TP2 – 2025
+    </footer>
+
+</body>
+</html>
