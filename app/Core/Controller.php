@@ -60,7 +60,7 @@ $livres = $livre->getWithDetails();
 </table>
 
 <footer>
-    Projet TP1 -librairie- Web avancé .
+    Projet TP2 -librairie- Web avancé .
 </footer>
 
 </body>

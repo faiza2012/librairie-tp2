@@ -23,9 +23,9 @@ Projet de gestion de livres en ligne développé avec PHP, architecture MVC, et 
 3. Lancer `localhost/[chemin]/public/index.php`
 
 ## Auteur
-Prénom Nom – Groupe
+faiza djahnine 
 
 ## Lien Webdev
-
+ https://webdev.cmaisonneuve.qc.ca/~e2195490/Librairie_tp2/public/
 ## Lien GitHub
 https://github.com/faiza2012/librairie-tp2

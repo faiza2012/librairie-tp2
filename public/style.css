@@ -77,8 +77,8 @@ a.btn:hover {
     box-shadow: none;
 }
 footer {
-    background-color:#5a531f; /* Couleur de fond blanche comme le reste */
-    color: #fff;          /* Même couleur que le menu */
+    background-color:#5a531f; 
+    color: #fff;          
     text-align: center;
     padding: 15px 0;
     font-size: 0.95em;

@@ -20,7 +20,6 @@
         </div>
     </div>
 
-    <!-- Conteneur principal pour le formulaire -->
     <div class="form-container">
         <h1>Ajouter un livre</h1>
 
@@ -33,7 +32,6 @@
             </ul>
         {% endif %}
 
-        <!-- Formulaire d'ajout de livre -->
         <form action="index.php?controller=livre&action=ajouter" method="post">
             <label>Titre :</label>
             <input type="text" name="titre" value="{{ titre|default('') }}" required>

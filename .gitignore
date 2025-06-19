@@ -1,7 +1,6 @@
 # Ignorer les fichiers/dossiers sensibles ou inutiles
 
-# Dépendances PHP
-/vendor/
+
 
 # Fichiers temporaires
 *.log

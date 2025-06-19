@@ -1,5 +1,5 @@
 <?php
-// Détection automatique de l'environnement
+// Détection automatique de l'environnement pour la connection 
 if (str_contains($_SERVER['HTTP_HOST'], 'localhost')) {
     define('BASE', '/Librairie_tp2/');
     define('ASSET', '/Librairie_tp2/public/');
