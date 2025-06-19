@@ -35,9 +35,8 @@ class Router
     }
 
     // ✅ Route invalide — afficher la page d'erreur 404 
-    $loader = new \Twig\Loader\FilesystemLoader(__DIR__ . '/../Views');
-    $twig = new \Twig\Environment($loader);
-    echo $twig->render('error/404.twig');
+    echo $GLOBALS['twig']->render('error/404.twig');
+
     
 }
 }
